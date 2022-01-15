@@ -11,6 +11,7 @@ Features in this script includes:
 * Hitbox Expander (Press t to refresh)
 * ESP
 * Transparent player (removed for now)
+* Shiny Players (New)
 
  That is all of the features now.
  
