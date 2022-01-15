@@ -20,3 +20,9 @@ Features in this script includes:
  * Better GUI
  
  Much more will be added to this script.
+ 
+ ## Some Information
+ 
+ Yes, This script is For badhook https://github.com/cOpEtriNe/BadHook
+ 
+ Although badhook is still in development you can still use these scripts that are going to be in badhook.
