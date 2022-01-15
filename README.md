@@ -33,6 +33,7 @@ Features in this script includes:
  
  * Added a watermark thing
  * Added a TextLabel to show what version you are running
+ * Moved things in the GUI
 
 That is the small update for today, gonna sleep.
  
