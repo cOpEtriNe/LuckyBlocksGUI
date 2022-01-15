@@ -1,4 +1,4 @@
-![banner](https://ibb.co/fXD1YqD)
+![banner](https://raw.githubusercontent.com/cOpEtriNe/ImagePrivate/main/LUcky.PNG?token=GHSAT0AAAAAABPAGTO2CEQKA6FV4TFXE462YPCD5RA)
 
 # LuckyBlocksGUI
 Very Cool gui for the roblox game Lucky Blocks.
