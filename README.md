@@ -26,3 +26,13 @@ Features in this script includes:
  Yes, This script is For badhook https://github.com/cOpEtriNe/BadHook
  
  Although badhook is still in development you can still use these scripts that are going to be in badhook.
+ 
+ ## Changelog
+ 
+ Script is V1.2, New Things:
+ 
+ * Added a watermark thing
+ * Added a TextLabel to show what version you are running
+
+That is the small update for today, gonna sleep.
+ 
