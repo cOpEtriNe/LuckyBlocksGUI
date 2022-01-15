@@ -30,11 +30,14 @@ Features in this script includes:
  
  ## Changelog
  
- Script is V1.2, New Things:
+ Script is V1.3, New Things:
  
- * Added a watermark thing
- * Added a TextLabel to show what version you are running
- * Moved things in the GUI
+* Added Shiny players
+* fixed the watermark moving with the main gui
+* New UI
+* Added close and open button
+* removed Transparent players
+* moved the version TextLabel to be close to the title.
 
-That is the small update for today, gonna sleep.
- 
+that is all for this update.
+
