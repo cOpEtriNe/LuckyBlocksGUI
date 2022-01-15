@@ -10,7 +10,7 @@ Features in this script includes:
 * Bhop / Circle strafe
 * Hitbox Expander (Press t to refresh)
 * ESP
-* Transparent player (Broken, working on.)
+* Transparent player (removed for now)
 
  That is all of the features now.
  
