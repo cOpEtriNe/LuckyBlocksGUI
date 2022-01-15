@@ -1,3 +1,5 @@
+![banner](https://ibb.co/fXD1YqD)
+
 # LuckyBlocksGUI
 Very Cool gui for the roblox game Lucky Blocks.
 
@@ -9,6 +11,7 @@ Features in this script includes:
 * Hitbox Expander (Press t to refresh)
 * ESP
 * Transparent player (Broken, working on.)
+
  That is all of the features now.
  
  ## Planning to add
