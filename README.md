@@ -34,7 +34,9 @@ Features in this script includes:
  
 * Added Shiny players
 * fixed the watermark moving with the main gui
+* made the hitbox for players bigger
 * New UI
+* Updated ESP font
 * removed Transparent players
 * moved the version TextLabel to be close to the title.
 
