@@ -35,7 +35,6 @@ Features in this script includes:
 * Added Shiny players
 * fixed the watermark moving with the main gui
 * New UI
-* Added close and open button
 * removed Transparent players
 * moved the version TextLabel to be close to the title.
 
