@@ -1,4 +1,4 @@
--- Lucky blocks gui | made by cOpEtriNe For BadHook Re-code.
+-- Lucky blocks gui | made by cOpEtriNe For BadHook Re-code. V1.2
 
 local LuckyBlocksGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -7,11 +7,14 @@ local GetBlocks = Instance.new("TextButton")
 local Teleport = Instance.new("TextButton")
 local Strafe = Instance.new("TextButton")
 local RainbowBlock = Instance.new("TextButton")
-local TransparentPlayer = Instance.new("TextButton")
 local VisualTitle = Instance.new("TextLabel")
 local ESP = Instance.new("TextButton")
 local BlocksMiscTitle = Instance.new("TextLabel")
 local BiggerHitbox = Instance.new("TextButton")
+local Version = Instance.new("TextLabel")
+local ShinyPlayers = Instance.new("TextButton")
+local WatermarkFrame = Instance.new("Frame")
+local Watermark = Instance.new("TextLabel")
 
 --Properties:
 
@@ -19,9 +22,11 @@ LuckyBlocksGUI.Name = "LuckyBlocksGUI"
 LuckyBlocksGUI.Parent = game.CoreGui
 
 Frame.Parent = LuckyBlocksGUI
-Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Frame.Position = UDim2.new(0.075757578, 0, 0.654411793, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0193939358, 0, 0.655637324, 0)
 Frame.Size = UDim2.new(0, 560, 0, 248)
+Frame.SizeConstraint = Enum.SizeConstraint.RelativeYY
 Frame.Active = true
 Frame.Draggable = true
 Frame.Visible = true
@@ -29,11 +34,14 @@ Frame.Visible = true
 Title.Name = "Title"
 Title.Parent = Frame
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Title.BorderSizePixel = 0
-Title.Size = UDim2.new(0, 560, 0, 30)
-Title.Font = Enum.Font.SourceSans
+Title.Position = UDim2.new(-0.000994382543, 0, 0, 0)
+Title.Size = UDim2.new(0, 276, 0, 23)
+Title.Font = Enum.Font.Ubuntu
 Title.Text = "Lucky blocks GUI"
-Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
@@ -41,7 +49,7 @@ Title.TextWrapped = true
 GetBlocks.Name = "GetBlocks"
 GetBlocks.Parent = Frame
 GetBlocks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GetBlocks.Position = UDim2.new(0.0597199053, 0, 0.298246562, 0)
+GetBlocks.Position = UDim2.new(-0.000994380331, 0, 0.294214308, 0)
 GetBlocks.Size = UDim2.new(0, 165, 0, 22)
 GetBlocks.Font = Enum.Font.SourceSans
 GetBlocks.Text = "Get blocks"
@@ -58,7 +66,8 @@ end)
 Teleport.Name = "Teleport"
 Teleport.Parent = Frame
 Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Teleport.Position = UDim2.new(0.0597199611, 0, 0.471633643, 0)
+Teleport.BorderSizePixel = 0
+Teleport.Position = UDim2.new(-0.000994324684, 0, 0.467601389, 0)
 Teleport.Size = UDim2.new(0, 165, 0, 21)
 Teleport.Font = Enum.Font.SourceSans
 Teleport.Text = "Teleport to middle"
@@ -67,13 +76,16 @@ Teleport.TextScaled = true
 Teleport.TextSize = 14.000
 Teleport.TextWrapped = true
 Teleport.MouseButton1Down:connect(function()
+
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1053.96619, 193.799942, 94.8720245, 0.506673872, -3.95011774e-08, 0.862137794, -5.28372333e-08, 1, 7.6869874e-08, -0.862137794, -8.45009325e-08, 0.506673872)
+
 end)
 
 Strafe.Name = "Strafe"
 Strafe.Parent = Frame
 Strafe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Strafe.Position = UDim2.new(0.0597199053, 0, 0.382924229, 0)
+Strafe.BorderSizePixel = 0
+Strafe.Position = UDim2.new(-0.000994380563, 0, 0.378891975, 0)
 Strafe.Size = UDim2.new(0, 165, 0, 22)
 Strafe.Font = Enum.Font.SourceSans
 Strafe.Text = "Strafe (go fast)"
@@ -89,10 +101,12 @@ Strafe.MouseButton1Down:connect(function()
 	end
 end)
 
+
 RainbowBlock.Name = "RainbowBlock"
 RainbowBlock.Parent = Frame
 RainbowBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RainbowBlock.Position = UDim2.new(0.0597199611, 0, 0.552278996, 0)
+RainbowBlock.BorderSizePixel = 0
+RainbowBlock.Position = UDim2.new(-0.000994324684, 0, 0.552278996, 0)
 RainbowBlock.Size = UDim2.new(0, 165, 0, 22)
 RainbowBlock.Font = Enum.Font.SourceSans
 RainbowBlock.Text = "Get Rainbow block"
@@ -106,29 +120,15 @@ RainbowBlock.MouseButton1Down:connect(function()
 
 end)
 
-TransparentPlayer.Name = "TransparentPlayer"
-TransparentPlayer.Parent = Frame
-TransparentPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TransparentPlayer.Position = UDim2.new(0.611505568, 0, 0.298246831, 0)
-TransparentPlayer.Size = UDim2.new(0, 164, 0, 27)
-TransparentPlayer.Font = Enum.Font.SourceSans
-TransparentPlayer.Text = "Transparent Player"
-TransparentPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
-TransparentPlayer.TextScaled = true
-TransparentPlayer.TextSize = 14.000
-TransparentPlayer.TextWrapped = true
-TransparentPlayer.MouseButton1Down:connect(function()
-	print("This Feature is not working, contact cOpEtriNe#4559 for more information.")
-end)
-
 VisualTitle.Name = "VisualTitle"
 VisualTitle.Parent = Frame
 VisualTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VisualTitle.Position = UDim2.new(0.576785743, 0, 0.161290318, 0)
+VisualTitle.BackgroundTransparency = 1.000
+VisualTitle.Position = UDim2.new(0.635714293, 0, 0.161290318, 0)
 VisualTitle.Size = UDim2.new(0, 204, 0, 23)
 VisualTitle.Font = Enum.Font.SourceSans
 VisualTitle.Text = "Visual Stuff"
-VisualTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+VisualTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 VisualTitle.TextScaled = true
 VisualTitle.TextSize = 14.000
 VisualTitle.TextWrapped = true
@@ -136,7 +136,7 @@ VisualTitle.TextWrapped = true
 ESP.Name = "ESP"
 ESP.Parent = Frame
 ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESP.Position = UDim2.new(0.611505568, 0, 0.407117784, 0)
+ESP.Position = UDim2.new(0.706148446, 0, 0.282117784, 0)
 ESP.Size = UDim2.new(0, 164, 0, 27)
 ESP.Font = Enum.Font.SourceSans
 ESP.Text = "ESP"
@@ -145,7 +145,7 @@ ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
 ESP.MouseButton1Down:connect(function()
-    -- credits to irc7 for making this cool script!
+	-- credits to irc7 for making this cool script!
 	--- Tut
 
 	local esp_settings = { ---- table for esp settings 
@@ -169,7 +169,7 @@ ESP.MouseButton1Down:connect(function()
 	esp.BorderSizePixel = 4;
 	esp.BorderColor3 = Color3.new(esp_settings.colour)
 	esp.BorderSizePixel = 0
-	esp.Font = "Ubuntu"
+	esp.Font = "Legacy"
 	esp.TextSize = esp_settings.textsize
 	esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
 
@@ -186,11 +186,12 @@ end)
 BlocksMiscTitle.Name = "BlocksMiscTitle"
 BlocksMiscTitle.Parent = Frame
 BlocksMiscTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BlocksMiscTitle.Position = UDim2.new(0.0250000358, 0, 0.161290318, 0)
+BlocksMiscTitle.BackgroundTransparency = 1.000
+BlocksMiscTitle.Position = UDim2.new(-0.00178567891, 0, 0.161290318, 0)
 BlocksMiscTitle.Size = UDim2.new(0, 204, 0, 23)
 BlocksMiscTitle.Font = Enum.Font.SourceSans
 BlocksMiscTitle.Text = "Blocks/Misc "
-BlocksMiscTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlocksMiscTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 BlocksMiscTitle.TextScaled = true
 BlocksMiscTitle.TextSize = 14.000
 BlocksMiscTitle.TextWrapped = true
@@ -198,7 +199,8 @@ BlocksMiscTitle.TextWrapped = true
 BiggerHitbox.Name = "BiggerHitbox"
 BiggerHitbox.Parent = Frame
 BiggerHitbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BiggerHitbox.Position = UDim2.new(0.611505568, 0, 0.515988767, 0)
+BiggerHitbox.BorderSizePixel = 0
+BiggerHitbox.Position = UDim2.new(0.706148446, 0, 0.390988767, 0)
 BiggerHitbox.Size = UDim2.new(0, 164, 0, 27)
 BiggerHitbox.Font = Enum.Font.SourceSans
 BiggerHitbox.Text = "Bigger Hitbox"
@@ -246,3 +248,50 @@ BiggerHitbox.MouseButton1Down:connect(function()
 		end
 	end)
 end)
+
+Version.Name = "Version"
+Version.Parent = Frame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.440076947, 0, 0, 0)
+Version.Size = UDim2.new(0, 53, 0, 19)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "V1.3 Pre-Release"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 14.000
+
+ShinyPlayers.Name = "ShinyPlayers"
+ShinyPlayers.Parent = Frame
+ShinyPlayers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShinyPlayers.BorderSizePixel = 0
+ShinyPlayers.Position = UDim2.new(0.706148446, 0, 0.49985972, 0)
+ShinyPlayers.Size = UDim2.new(0, 164, 0, 27)
+ShinyPlayers.Font = Enum.Font.SourceSans
+ShinyPlayers.Text = "Shiny Player"
+ShinyPlayers.TextColor3 = Color3.fromRGB(0, 0, 0)
+ShinyPlayers.TextScaled = true
+ShinyPlayers.TextSize = 14.000
+ShinyPlayers.TextWrapped = true
+ShinyPlayers.MouseButton1Down:connect(function()
+	
+end)
+
+WatermarkFrame.Name = "WatermarkFrame"
+WatermarkFrame.Parent = LuckyBlocksGUI
+WatermarkFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WatermarkFrame.BackgroundTransparency = 1.000
+WatermarkFrame.Position = UDim2.new(0.871515155, 0, -0.0147058824, 0)
+WatermarkFrame.Size = UDim2.new(0, 212, 0, 100)
+
+Watermark.Name = "Watermark"
+Watermark.Parent = WatermarkFrame
+Watermark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Watermark.BackgroundTransparency = 1.000
+Watermark.Position = UDim2.new(-1.09967005, 0, -0.253225774, 0)
+Watermark.Size = UDim2.new(0, 213, 0, 51)
+Watermark.Font = Enum.Font.SourceSans
+Watermark.Text = "Lucky Blocks GUI | BadHook Re-code V1.3"
+Watermark.TextColor3 = Color3.fromRGB(0, 0, 0)
+Watermark.TextSize = 14.000
+Watermark.TextWrapped = true
+
