@@ -37,6 +37,7 @@ Features in this script includes:
  Script is V1.4, New Things:
  
 * Added walkbot
+* Updated the watermark to display the build date
 * Redesigned the UI
 * Added Tabs 
 * Added a Keybind (Insert to toggle)
