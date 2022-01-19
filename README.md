@@ -42,3 +42,4 @@ Features in this script includes:
 
 that is all for this update.
 
+Version 1.4 is coming later today!
