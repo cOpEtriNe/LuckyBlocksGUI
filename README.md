@@ -3,22 +3,26 @@
 # LuckyBlocksGUI
 Very Cool gui for the roblox game Lucky Blocks.
 
+To open or close the gui, press "Insert" on your keyboard 
+
 ## Features
 Features in this script includes:
 * Get Free blocks (Normal And Rainbow)
+* A Pathfinding AI! Walk to the middle of the map!
+* Get Super blocks
 * Teleport to the middle of the map
 * Bhop / Circle strafe
 * Hitbox Expander (Press t to refresh)
 * ESP
-* Transparent player (removed for now)
+* Transparent player (Working)
 * Shiny Players (New, not shiny just uses ForceField for material)
 
  That is all of the features now.
  
  ## Planning to add
  I will plan to add:
- * More functions / Buttons
- * Better GUI
+ * More functions / Buttons (Almost done!)
+ * Better GUI (Done)
  
  Much more will be added to this script.
  
@@ -30,15 +34,14 @@ Features in this script includes:
  
  ## Changelog
  
- Script is V1.3, New Things:
+ Script is V1.4, New Things:
  
-* Added Shiny players
-* fixed the watermark moving with the main gui
-* made the hitbox for players bigger
-* New UI
-* Updated ESP font
-* removed Transparent players
-* moved the version TextLabel to be close to the title.
+* Added walkbot
+* Redesigned the UI
+* Added Tabs 
+* Added a Keybind (Insert to toggle)
+* Added Super Blocks
+* Removed Shiny players (It makes your body parts transparent now.)
 
 that is all for this update.
 
