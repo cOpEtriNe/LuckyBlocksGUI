@@ -158,9 +158,7 @@ SuperBlock.TextScaled = true
 SuperBlock.TextSize = 14.000
 SuperBlock.TextWrapped = true
 SuperBlock.MouseButton1Down:connect(function()
-
 	game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
-
 end)
 
 VisualsTab.Name = "VisualsTab"
