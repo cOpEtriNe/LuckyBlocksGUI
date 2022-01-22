@@ -42,6 +42,7 @@ Features in this script includes:
  * Added chams
  * Added The ability to show HumanoidRootPart
  * Added Get Diamond blocks
+ * Renamed Strafe to Walkspeed
 
 that is all for this update.
 
