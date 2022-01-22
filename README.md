@@ -26,7 +26,7 @@ Features in this script includes:
  I will plan to add:
  * More functions / Buttons (Almost done!)
  * Better GUI (Done)
- * Get all weapons (pretty much all)
+ * Get all weapons (pretty much all, already coded just too lazy )
  
  Much more will be added to this script.
  
