@@ -15,7 +15,7 @@ Features in this script includes:
 * Hitbox Expander (Press t to refresh)
 * ESP
 * Transparent player (Working)
-* Shiny Players (New, not shiny just uses ForceField for material)
+* Shiny Players (removed)
 * Chams
 * Get Diamond Block
 * Show HumanoidRootPart
