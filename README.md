@@ -42,6 +42,7 @@ Features in this script includes:
  * Added chams
  * Added The ability to show HumanoidRootPart
  * Added Get Diamond blocks
+
 that is all for this update.
 
 Sorry about this update being really small, i just didnt feel like updating today.
