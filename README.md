@@ -16,6 +16,9 @@ Features in this script includes:
 * ESP
 * Transparent player (Working)
 * Shiny Players (New, not shiny just uses ForceField for material)
+* Chams
+* Get Diamond Block
+* Show HumanoidRootPart
 
  That is all of the features now.
  
@@ -34,15 +37,12 @@ Features in this script includes:
  
  ## Changelog
  
- Script is V1.4, New Things:
+ Script is V1.5, New Things:
  
-* Added walkbot
-* Updated the watermark to display the build date
-* Redesigned the UI
-* Added Tabs 
-* Added a Keybind (Insert to toggle)
-* Added Super Blocks
-* Removed Shiny players (It makes your body parts transparent now.)
-
+ * Added chams
+ * Added The ability to show HumanoidRootPart
+ * Added Get Diamond blocks
 that is all for this update.
+
+Sorry about this update being really small, i just didnt feel like updating today.
 
