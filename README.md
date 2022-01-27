@@ -12,6 +12,10 @@ Features in this script includes:
 * Get Super blocks
 * Teleport to the middle of the map
 * walkspeed
+* Get Galaxy Blocks
+* Clientside Headless script (make yourself have headless)
+* Panic Mode (Bot that will save your life, broken)
+* Weapon/Block exploit (Allows you to get tons of weapons for free!)
 * Hitbox Expander (Press t to refresh)
 * ESP
 * Transparent player (Working)
