@@ -1,4 +1,4 @@
--- Lucky blocks V1.5
+-- lucky blocks gui v1.6
 
 local LuckyBlocksGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -11,14 +11,18 @@ local Walkspeed = Instance.new("TextButton")
 local GetBlocks = Instance.new("TextButton")
 local SuperBlock = Instance.new("TextButton")
 local DiamondBlock = Instance.new("TextButton")
+local GalazyBlock = Instance.new("TextButton")
+local GetWeaponHack = Instance.new("TextButton")
 local VisualsTab = Instance.new("Frame")
 local BiggerHitbox = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
 local ShinyPlayers = Instance.new("TextButton")
 local ShowHumanoid = Instance.new("TextButton")
 local Chams = Instance.new("TextButton")
+local Headless = Instance.new("TextButton")
 local WalkbotTab = Instance.new("Frame")
 local WalkToMiddle = Instance.new("TextButton")
+local PanicBot = Instance.new("TextButton")
 local BlocksMiscButton = Instance.new("TextButton")
 local VisualButton = Instance.new("TextButton")
 local WalkBotButton = Instance.new("TextButton")
@@ -33,7 +37,7 @@ LuckyBlocksGUI.Parent = game.CoreGui
 Frame.Parent = LuckyBlocksGUI
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(-0.000511348248, 0, 0.923411727, 0)
+Frame.Position = UDim2.new(0.0746496022, 0, 0.577957153, 0)
 Frame.Size = UDim2.new(0, 560, 0, 248)
 Frame.SizeConstraint = Enum.SizeConstraint.RelativeYY
 Frame.Active = true
@@ -62,7 +66,7 @@ Version.BackgroundTransparency = 1.000
 Version.Position = UDim2.new(0.440076947, 0, 0, 0)
 Version.Size = UDim2.new(0, 53, 0, 19)
 Version.Font = Enum.Font.SourceSans
-Version.Text = "V1.5 Release"
+Version.Text = "V1.6 Release"
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextSize = 14.000
 
@@ -119,10 +123,10 @@ Walkspeed.TextScaled = true
 Walkspeed.TextSize = 14.000
 Walkspeed.TextWrapped = true
 Walkspeed.MouseButton1Down:connect(function()
-while true do
-wait(1)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60
-end
+	while true do
+		wait(1)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60
+	end
 end)
 
 GetBlocks.Name = "GetBlocks"
@@ -170,6 +174,63 @@ DiamondBlock.TextSize = 14.000
 DiamondBlock.TextWrapped = true
 DiamondBlock.MouseButton1Down:connect(function()
 	game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
+end)
+
+GalazyBlock.Name = "GalazyBlock"
+GalazyBlock.Parent = BlocksMiscTab
+GalazyBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GalazyBlock.BorderSizePixel = 0
+GalazyBlock.Position = UDim2.new(0.0329342894, 0, 0.532486498, 0)
+GalazyBlock.Size = UDim2.new(0, 165, 0, 22)
+GalazyBlock.Font = Enum.Font.SourceSans
+GalazyBlock.Text = "Get Galaxy Block"
+GalazyBlock.TextColor3 = Color3.fromRGB(0, 0, 0)
+GalazyBlock.TextScaled = true
+GalazyBlock.TextSize = 14.000
+GalazyBlock.TextWrapped = true
+GalazyBlock.MouseButton1Down:Connect(function()
+	game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+end)
+
+GetWeaponHack.Name = "GetWeaponHack"
+GetWeaponHack.Parent = BlocksMiscTab
+GetWeaponHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetWeaponHack.BorderSizePixel = 0
+GetWeaponHack.Position = UDim2.new(0.363291383, 0, 0.532486498, 0)
+GetWeaponHack.Size = UDim2.new(0, 165, 0, 22)
+GetWeaponHack.Font = Enum.Font.SourceSans
+GetWeaponHack.Text = "Get Weapons Exploit"
+GetWeaponHack.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetWeaponHack.TextScaled = true
+GetWeaponHack.TextSize = 14.000
+GetWeaponHack.TextWrapped = true
+GetWeaponHack.MouseButton1Down:Connect(function()
+	while true do
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+		wait(1)
+		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+	end
 end)
 
 VisualsTab.Name = "VisualsTab"
@@ -233,6 +294,7 @@ BiggerHitbox.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 ESP.Name = "ESP"
 ESP.Parent = VisualsTab
 ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -290,7 +352,7 @@ ShinyPlayers.BorderSizePixel = 0
 ShinyPlayers.Position = UDim2.new(0.39186275, 0, 0.0851847529, 0)
 ShinyPlayers.Size = UDim2.new(0, 164, 0, 27)
 ShinyPlayers.Font = Enum.Font.SourceSans
-ShinyPlayers.Text = "Transparent player"
+ShinyPlayers.Text = "Shiny Players"
 ShinyPlayers.TextColor3 = Color3.fromRGB(0, 0, 0)
 ShinyPlayers.TextScaled = true
 ShinyPlayers.TextSize = 14.000
@@ -329,132 +391,153 @@ Chams.TextScaled = true
 Chams.TextSize = 14.000
 Chams.TextWrapped = true
 Chams.MouseButton1Down:connect(function()
-local dwEntities = game:GetService("Players")
-local dwLocalPlayer = dwEntities.LocalPlayer 
-local dwRunService = game:GetService("RunService")
+	local dwEntities = game:GetService("Players")
+	local dwLocalPlayer = dwEntities.LocalPlayer 
+	local dwRunService = game:GetService("RunService")
 
-local settings_tbl = {
-    ESP_Enabled = true,
-    ESP_TeamCheck = false,
-    Chams = true,
-    Chams_Color = Color3.fromRGB(134, 39, 165),
-    Chams_Transparency = 0.1,
-    Chams_Glow_Color = Color3.fromRGB(255, 255, 255)
-}
+	local settings_tbl = {
+		ESP_Enabled = true,
+		ESP_TeamCheck = false,
+		Chams = true,
+		Chams_Color = Color3.fromRGB(134, 39, 165),
+		Chams_Transparency = 0.1,
+		Chams_Glow_Color = Color3.fromRGB(255, 255, 255)
+	}
 
-function destroy_chams(char)
+	function destroy_chams(char)
 
-    for k,v in next, char:GetChildren() do 
+		for k,v in next, char:GetChildren() do 
 
-        if v:IsA("BasePart") and v.Transparency ~= 1 then
+			if v:IsA("BasePart") and v.Transparency ~= 1 then
 
-            if v:FindFirstChild("Glow") and 
-            v:FindFirstChild("Chams") then
+				if v:FindFirstChild("Glow") and 
+					v:FindFirstChild("Chams") then
 
-                v.Glow:Destroy()
-                v.Chams:Destroy() 
+					v.Glow:Destroy()
+					v.Chams:Destroy() 
 
-            end 
+				end 
 
-        end 
+			end 
 
-    end 
+		end 
 
-end
+	end
 
-dwRunService.Heartbeat:Connect(function()
+	dwRunService.Heartbeat:Connect(function()
 
-    if settings_tbl.ESP_Enabled then
+		if settings_tbl.ESP_Enabled then
 
-        for k,v in next, dwEntities:GetPlayers() do 
+			for k,v in next, dwEntities:GetPlayers() do 
 
-            if v ~= dwLocalPlayer then
+				if v ~= dwLocalPlayer then
 
-                if v.Character and
-                v.Character:FindFirstChild("HumanoidRootPart") and 
-                v.Character:FindFirstChild("Humanoid") and 
-                v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+					if v.Character and
+						v.Character:FindFirstChild("HumanoidRootPart") and 
+						v.Character:FindFirstChild("Humanoid") and 
+						v.Character:FindFirstChild("Humanoid").Health ~= 0 then
 
-                    if settings_tbl.ESP_TeamCheck == false then
+						if settings_tbl.ESP_TeamCheck == false then
 
-                        local char = v.Character 
+							local char = v.Character 
 
-                        for k,b in next, char:GetChildren() do 
+							for k,b in next, char:GetChildren() do 
 
-                            if b:IsA("BasePart") and 
-                            b.Transparency ~= 1 then
-                                
-                                if settings_tbl.Chams then
+								if b:IsA("BasePart") and 
+									b.Transparency ~= 1 then
 
-                                    if not b:FindFirstChild("Glow") and
-                                    not b:FindFirstChild("Chams") then
+									if settings_tbl.Chams then
 
-                                        local chams_box = Instance.new("BoxHandleAdornment", b)
-                                        chams_box.Name = "Chams"
-                                        chams_box.AlwaysOnTop = true 
-                                        chams_box.ZIndex = 4 
-                                        chams_box.Adornee = b 
-                                        chams_box.Color3 = settings_tbl.Chams_Color
-                                        chams_box.Transparency = settings_tbl.Chams_Transparency
-                                        chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
+										if not b:FindFirstChild("Glow") and
+											not b:FindFirstChild("Chams") then
 
-                                        local glow_box = Instance.new("BoxHandleAdornment", b)
-                                        glow_box.Name = "Glow"
-                                        glow_box.AlwaysOnTop = false 
-                                        glow_box.ZIndex = 3 
-                                        glow_box.Adornee = b 
-                                        glow_box.Color3 = settings_tbl.Chams_Glow_Color
-                                        glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+											local chams_box = Instance.new("BoxHandleAdornment", b)
+											chams_box.Name = "Chams"
+											chams_box.AlwaysOnTop = true 
+											chams_box.ZIndex = 4 
+											chams_box.Adornee = b 
+											chams_box.Color3 = settings_tbl.Chams_Color
+											chams_box.Transparency = settings_tbl.Chams_Transparency
+											chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
 
-                                    end
+											local glow_box = Instance.new("BoxHandleAdornment", b)
+											glow_box.Name = "Glow"
+											glow_box.AlwaysOnTop = false 
+											glow_box.ZIndex = 3 
+											glow_box.Adornee = b 
+											glow_box.Color3 = settings_tbl.Chams_Glow_Color
+											glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
 
-                                else
+										end
 
-                                    destroy_chams(char)
+									else
 
-                                end
-                            
-                            end
+										destroy_chams(char)
 
-                        end
+									end
 
-                    else
+								end
 
-                        if v.Team == dwLocalPlayer.Team then
-                            destroy_chams(v.Character)
-                        end
+							end
 
-                    end
+						else
 
-                else
+							if v.Team == dwLocalPlayer.Team then
+								destroy_chams(v.Character)
+							end
 
-                    destroy_chams(v.Character)
+						end
 
-                end
+					else
 
-            end
+						destroy_chams(v.Character)
 
-        end
+					end
 
-    else 
+				end
 
-        for k,v in next, dwEntities:GetPlayers() do 
+			end
 
-            if v ~= dwLocalPlayer and 
-            v.Character and 
-            v.Character:FindFirstChild("HumanoidRootPart") and 
-            v.Character:FindFirstChild("Humanoid") and 
-            v.Character:FindFirstChild("Humanoid").Health ~= 0 then
-                
-                destroy_chams(v.Character)
+		else 
 
-            end
+			for k,v in next, dwEntities:GetPlayers() do 
 
-        end
+				if v ~= dwLocalPlayer and 
+					v.Character and 
+					v.Character:FindFirstChild("HumanoidRootPart") and 
+					v.Character:FindFirstChild("Humanoid") and 
+					v.Character:FindFirstChild("Humanoid").Health ~= 0 then
 
-    end
+					destroy_chams(v.Character)
 
+				end
+
+			end
+
+		end
+
+	end)
 end)
+
+
+Headless.Name = "Headless"
+Headless.Parent = VisualsTab
+Headless.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Headless.BorderSizePixel = 0
+Headless.Position = UDim2.new(0.39186275, 0, 0.572168767, 0)
+Headless.Size = UDim2.new(0, 164, 0, 27)
+Headless.Font = Enum.Font.SourceSans
+Headless.Text = "Clientside Headless"
+Headless.TextColor3 = Color3.fromRGB(0, 0, 0)
+Headless.TextScaled = true
+Headless.TextSize = 14.000
+Headless.TextWrapped = true
+Headless.MouseButton1Down:Connect(function()
+while true do
+		wait(1)
+		game.Players.LocalPlayer.Character.Head.Transparency = 1
+		game.Players.LocalPlayer.Character.Head.face:Destroy()
+end
 end)
 
 WalkbotTab.Name = "WalkbotTab"
@@ -544,6 +627,87 @@ WalkToMiddle.MouseButton1Down:connect(function()
 end)
 
 
+
+PanicBot.Name = "PanicBot"
+PanicBot.Parent = WalkbotTab
+PanicBot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PanicBot.Position = UDim2.new(0.374005675, 0, 0.074299708, 0)
+PanicBot.Size = UDim2.new(0, 165, 0, 22)
+PanicBot.Font = Enum.Font.SourceSans
+PanicBot.Text = "Panic Mode"
+PanicBot.TextColor3 = Color3.fromRGB(0, 0, 0)
+PanicBot.TextScaled = true
+PanicBot.TextSize = 14.000
+PanicBot.TextWrapped = true
+WalkToMiddle.MouseButton1Down:connect(function()
+	wait(1)
+
+	loadstring(game:HttpGet(('https://pastebin.com/raw/LvFwMRvn'),true))()
+
+	local PathfindingService = game:GetService("PathfindingService")
+	local Players = game:GetService("Players")
+
+	local path = PathfindingService:CreatePath()
+
+	local player = Players.LocalPlayer
+	local character = player.Character
+	local humanoid = character:WaitForChild("Humanoid")
+
+	local TEST_DESTINATION = Vector3.new(-850.463318, 141.041656, 90.9938965, -0.113989174, -0.2454402, 0.962686658, -4.68760852e-09, 0.969002604, 0.247050479, -0.993481994, 0.028161075, -0.110455811) -- change the numbers to your own position
+
+	local waypoints
+	local nextWaypointIndex
+	local reachedConnection
+	local blockedConnection
+
+	local function followPath(destination)
+		-- Compute the path
+		local success, errorMessage = pcall(function()
+			path:ComputeAsync(character.PrimaryPart.Position, destination)
+		end)
+
+		if success and path.Status == Enum.PathStatus.Success then
+			-- Get the path waypoints
+			waypoints = path:GetWaypoints()
+
+			-- Detect if path becomes blocked
+			blockedConnection = path.Blocked:Connect(function(blockedWaypointIndex)
+				-- Check if the obstacle is further down the path
+				if blockedWaypointIndex >= nextWaypointIndex then
+					-- Stop detecting path blockage until path is re-computed
+					blockedConnection:Disconnect()
+					-- Call function to re-compute new path
+					followPath(destination)
+				end
+			end)
+
+			-- Detect when movement to next waypoint is complete
+			if not reachedConnection then
+				reachedConnection = humanoid.MoveToFinished:Connect(function(reached)
+					if reached and nextWaypointIndex < #waypoints then
+						-- Increase waypoint index and move to next waypoint
+						nextWaypointIndex += 1
+						humanoid:MoveTo(waypoints[nextWaypointIndex].Position)
+					else
+						reachedConnection:Disconnect()
+						blockedConnection:Disconnect()
+					end
+				end)
+			end
+
+			-- Initially move to second waypoint (first waypoint is path start; skip it)
+			nextWaypointIndex = 2
+			humanoid:MoveTo(waypoints[nextWaypointIndex].Position)
+		else
+			warn("Path not computed!", errorMessage)
+		end
+	end
+
+	followPath(TEST_DESTINATION)
+end)
+
+
+
 BlocksMiscButton.Name = "BlocksMiscButton"
 BlocksMiscButton.Parent = Frame
 BlocksMiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -591,17 +755,17 @@ Watermark.Name = "Watermark"
 Watermark.Parent = WatermarkFrame
 Watermark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Watermark.BackgroundTransparency = 1.000
-Watermark.Position = UDim2.new(-1.09967005, 0, -0.253225774, 0)
-Watermark.Size = UDim2.new(0, 213, 0, 51)
+Watermark.Position = UDim2.new(-1.09966981, 0, -0.253225744, 0)
+Watermark.Size = UDim2.new(0, 257, 0, 50)
 Watermark.Font = Enum.Font.SourceSans
-Watermark.Text = "Lucky Blocks GUI | BadHook Re-code V1.5 22/01/2022 Build"
+Watermark.Text = "Lucky Blocks GUI | BadHook Re-code V1.6  27/01/2022 Build"
 Watermark.TextColor3 = Color3.fromRGB(0, 0, 0)
 Watermark.TextSize = 14.000
 Watermark.TextWrapped = true
 
 -- Scripts:
 
-local function NTXWRA_fake_script() -- BlocksMiscButton.LocalScript 
+local function SJDICY_fake_script() -- BlocksMiscButton.LocalScript 
 	local script = Instance.new('LocalScript', BlocksMiscButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -610,8 +774,8 @@ local function NTXWRA_fake_script() -- BlocksMiscButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = false
 	end)
 end
-coroutine.wrap(NTXWRA_fake_script)()
-local function ZASJRNK_fake_script() -- VisualButton.LocalScript 
+coroutine.wrap(SJDICY_fake_script)()
+local function RVIPK_fake_script() -- VisualButton.LocalScript 
 	local script = Instance.new('LocalScript', VisualButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -620,8 +784,8 @@ local function ZASJRNK_fake_script() -- VisualButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = true
 	end)
 end
-coroutine.wrap(ZASJRNK_fake_script)()
-local function QAJQLZ_fake_script() -- WalkBotButton.LocalScript 
+coroutine.wrap(RVIPK_fake_script)()
+local function DKEXIHS_fake_script() -- WalkBotButton.LocalScript 
 	local script = Instance.new('LocalScript', WalkBotButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -630,14 +794,14 @@ local function QAJQLZ_fake_script() -- WalkBotButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = false
 	end)
 end
-coroutine.wrap(QAJQLZ_fake_script)()
-local function FMISI_fake_script() -- LuckyBlocksGUI.Keybind 
+coroutine.wrap(DKEXIHS_fake_script)()
+local function WDSJO_fake_script() -- LuckyBlocksGUI.Keybind 
 	local script = Instance.new('LocalScript', LuckyBlocksGUI)
 
 	local Frame = script.Parent.Frame
 	local Opened = false
 	
-	local PositionClosed = UDim2.new(0, 0,0.695, 0)
+	local PositionClosed = UDim2.new(-0.358, 0,0.349, 0)
 	local PositionOpened = UDim2.new(0.33, 0,0.543, 0)
 	
 	local UserInputService = game:GetService("UserInputService")
@@ -654,4 +818,4 @@ local function FMISI_fake_script() -- LuckyBlocksGUI.Keybind
 	     end
 	end)
 end
-coroutine.wrap(FMISI_fake_script)()
+coroutine.wrap(WDSJO_fake_script)()
