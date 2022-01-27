@@ -27,6 +27,7 @@ Features in this script includes:
  * More functions / Buttons (Almost done!)
  * Better GUI (Done)
  * Get all weapons (pretty much all weapons, already coded just too lazy to add)
+ * get galaxy blocks
  
  Much more will be added to this script.
  
