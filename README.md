@@ -32,6 +32,7 @@ Features in this script includes:
  * Better GUI (Done)
  * Get all weapons (done. In 1.6)
  * get galaxy blocks (Done. In 1.6)
+ * Graphics Enhancer
  
  Much more will be added to this script.
  
