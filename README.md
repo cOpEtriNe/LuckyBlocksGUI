@@ -49,6 +49,7 @@ Features in this script includes:
  * Added Galaxy blocks button
  * Added a exploit to get free weapons
  * Added Panic Mode (broken, bot was supposed to walk off the map to save you)
+ * Fixed the position of the gui closing
 
 
 that is all for this update.
