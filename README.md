@@ -26,8 +26,8 @@ Features in this script includes:
  I will plan to add:
  * More functions / Buttons (Almost done!)
  * Better GUI (Done)
- * Get all weapons (pretty much all weapons, already coded just too lazy to add)
- * get galaxy blocks
+ * Get all weapons (done. In 1.6)
+ * get galaxy blocks (Done. In 1.6)
  
  Much more will be added to this script.
  
@@ -39,14 +39,15 @@ Features in this script includes:
  
  ## Changelog
  
- Script is V1.5, New Things:
+ Script is V1.6, New Things:
  
- * Added chams
- * Added The ability to show HumanoidRootPart
- * Added Get Diamond blocks
- * Renamed Strafe to Walkspeed
+ * Added Clientside Headless
+ * Added Galaxy blocks button
+ * Added a exploit to get free weapons
+ * Added Panic Mode (broken, bot was supposed to walk off the map to save you)
+
 
 that is all for this update.
 
-Sorry about this update being really small, i just didnt feel like updating today.
+
 
