@@ -52,7 +52,7 @@ Features in this script includes:
  Script is V1.7 , New Things:
  
 * Added Remove Trees button
-* Added Airstuck (Working now)
+* Added Airstuck (WHY IS THIS CRAP STILL BROKEN!!)
 
 that is all for this update.
 
