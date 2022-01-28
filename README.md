@@ -57,5 +57,11 @@ Features in this script includes:
 
 that is all for this update.
 
+## Binds
 
+Here are the binds for somethings in the script
+
+* Extended Hitbox  = T to refresh
+* Airstuck/Fakelag = E to get Stuck
+* Airstuck/Fakelag = R to get unstuck
 
