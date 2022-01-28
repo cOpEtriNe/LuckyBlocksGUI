@@ -49,6 +49,7 @@ Features in this script includes:
 * Added graphics enhancer
 * Fixed Panic Bot not working
 * Fixed the buttons in visuals tab taking up to much room
+* Made the hitbox extender bigger
 
 that is all for this update.
 
