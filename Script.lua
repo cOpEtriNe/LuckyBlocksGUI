@@ -906,7 +906,7 @@ local function MRJCOAK_fake_script() -- LuckyBlocksGUI.Keybind
 	local Opened = false
 	
 	local PositionClosed = UDim2.new(0, 0,0.695, 0)
-	local PositionOpened = UDim2.new(0.33, 0,0.543, 0)
+	local PositionOpened = UDim2.new(-0.358, 0,0.349, 0)
 	
 	local UserInputService = game:GetService("UserInputService")
 	
