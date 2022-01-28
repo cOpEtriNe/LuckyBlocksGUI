@@ -1,6 +1,6 @@
 ![banner](https://raw.githubusercontent.com/cOpEtriNe/ImagePrivate/main/LUcky.PNG?token=GHSAT0AAAAAABPAGTO2CEQKA6FV4TFXE462YPCD5RA)
 
-## Scripts currently works
+## Script currently works
 
 # LuckyBlocksGUI
 Very Cool gui for the roblox game Lucky Blocks.
@@ -52,6 +52,7 @@ Features in this script includes:
 * Fixed Panic Bot not working
 * Fixed the buttons in visuals tab taking up to much room
 * Made the hitbox extender bigger
+* Fixed the menu closing in the WRONG PLACE AGAIN
 
 that is all for this update.
 
