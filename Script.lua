@@ -1,4 +1,4 @@
---V1.6 Hotfix
+-- LuckyBlocks GUI V1.7 Created By cOpEtriNe
 
 local LuckyBlocksGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -21,6 +21,8 @@ local ShowHumanoid = Instance.new("TextButton")
 local Chams = Instance.new("TextButton")
 local Headless = Instance.new("TextButton")
 local GraphicsEnhancer = Instance.new("TextButton")
+local Airstuck = Instance.new("TextButton")
+local DestroyTrees = Instance.new("TextButton")
 local WalkbotTab = Instance.new("Frame")
 local WalkToMiddle = Instance.new("TextButton")
 local PanicBot = Instance.new("TextButton")
@@ -64,12 +66,14 @@ Version.Name = "Version"
 Version.Parent = Frame
 Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Version.BackgroundTransparency = 1.000
-Version.Position = UDim2.new(0.440076947, 0, 0, 0)
+Version.Position = UDim2.new(0.41150552, 0, 0, 0)
 Version.Size = UDim2.new(0, 53, 0, 19)
 Version.Font = Enum.Font.SourceSans
-Version.Text = "V1.6 Hotfix"
+Version.Text = "V1.7 "
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextScaled = true
 Version.TextSize = 14.000
+Version.TextWrapped = true
 
 BlocksMiscTab.Name = "BlocksMiscTab"
 BlocksMiscTab.Parent = Frame
@@ -94,7 +98,6 @@ RainbowBlock.TextWrapped = true
 RainbowBlock.MouseButton1Down:connect(function()
 	game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
 end)
-
 
 Teleport.Name = "Teleport"
 Teleport.Parent = BlocksMiscTab
@@ -196,7 +199,6 @@ GalaxyBlock.MouseButton1Down:Connect(function()
 	game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
 end)
 
-
 GetWeaponHack.Name = "GetWeaponHack"
 GetWeaponHack.Parent = BlocksMiscTab
 GetWeaponHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -237,6 +239,7 @@ GetWeaponHack.MouseButton1Down:Connect(function()
 		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
 	end
 end)
+
 
 VisualsTab.Name = "VisualsTab"
 VisualsTab.Parent = Frame
@@ -299,6 +302,7 @@ BiggerHitbox.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 ESP.Name = "ESP"
 ESP.Parent = VisualsTab
 ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -349,6 +353,7 @@ ESP.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 ShinyPlayers.Name = "ShinyPlayers"
 ShinyPlayers.Parent = VisualsTab
 ShinyPlayers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -381,7 +386,6 @@ ShowHumanoid.TextWrapped = true
 ShowHumanoid.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.Transparency = 0
 end)
-
 
 Chams.Name = "Chams"
 Chams.Parent = VisualsTab
@@ -524,6 +528,7 @@ Chams.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 Headless.Name = "Headless"
 Headless.Parent = VisualsTab
 Headless.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -543,6 +548,7 @@ Headless.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Head.face:Destroy()
 	end
 end)
+
 
 GraphicsEnhancer.Name = "GraphicsEnhancer"
 GraphicsEnhancer.Parent = VisualsTab
@@ -648,6 +654,70 @@ GraphicsEnhancer.MouseButton1Down:connect(function()
 	end
 end)
 
+Airstuck.Name = "Airstuck"
+Airstuck.Parent = VisualsTab
+Airstuck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Airstuck.BorderSizePixel = 0
+Airstuck.Position = UDim2.new(0.363291323, 0, 0.55662477, 0)
+Airstuck.Size = UDim2.new(0, 164, 0, 27)
+Airstuck.Font = Enum.Font.SourceSans
+Airstuck.Text = "Air Stuck"
+Airstuck.TextColor3 = Color3.fromRGB(0, 0, 0)
+Airstuck.TextScaled = true
+Airstuck.TextSize = 14.000
+Airstuck.TextWrapped = true
+Airstuck.MouseButton1Down:connect(function()
+	-- Variables
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+
+	-- Settings
+
+	bind = "e" -- has to be lowercase
+	bind2 = "r"
+
+	-- Script
+
+	mouse.KeyDown:connect(function(key)
+		if key == bind then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+		end
+	end)
+
+	mouse.KeyDown:connect(function(key2)
+		if key2 == bind2 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+		end
+	end)
+end)
+
+DestroyTrees.Name = "DestroyTrees"
+DestroyTrees.Parent = VisualsTab
+DestroyTrees.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DestroyTrees.BorderSizePixel = 0
+DestroyTrees.Position = UDim2.new(0.693648458, 0, 0.55662477, 0)
+DestroyTrees.Size = UDim2.new(0, 164, 0, 27)
+DestroyTrees.Font = Enum.Font.SourceSans
+DestroyTrees.Text = "Destroy Trees"
+DestroyTrees.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyTrees.TextScaled = true
+DestroyTrees.TextSize = 14.000
+DestroyTrees.TextWrapped = true
+DestroyTrees.MouseButton1Down:connect(function()
+	game.Workspace.Tree:Destroy()
+	wait(1)
+	game.Workspace.Tree:Destroy()
+	wait(1)
+	game.Workspace.Tree:Destroy()
+	wait(1)
+	game.Workspace.Tree:Destroy()
+	wait(1)
+	game.Workspace.Tree:Destroy()
+	wait(1)
+	game.Workspace.Tree:Destroy()
+end)
+
 WalkbotTab.Name = "WalkbotTab"
 WalkbotTab.Parent = Frame
 WalkbotTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -734,6 +804,7 @@ WalkToMiddle.MouseButton1Down:connect(function()
 	followPath(TEST_DESTINATION)
 end)
 
+
 PanicBot.Name = "PanicBot"
 PanicBot.Parent = WalkbotTab
 PanicBot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -812,6 +883,7 @@ PanicBot.MouseButton1Down:connect(function()
 	followPath(TEST_DESTINATION)
 end)
 
+
 BlocksMiscButton.Name = "BlocksMiscButton"
 BlocksMiscButton.Parent = Frame
 BlocksMiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -869,7 +941,7 @@ Watermark.TextWrapped = true
 
 -- Scripts:
 
-local function YETNMAY_fake_script() -- BlocksMiscButton.LocalScript 
+local function XLAY_fake_script() -- BlocksMiscButton.LocalScript 
 	local script = Instance.new('LocalScript', BlocksMiscButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -878,8 +950,8 @@ local function YETNMAY_fake_script() -- BlocksMiscButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = false
 	end)
 end
-coroutine.wrap(YETNMAY_fake_script)()
-local function TJTUI_fake_script() -- VisualButton.LocalScript 
+coroutine.wrap(XLAY_fake_script)()
+local function CPFXIB_fake_script() -- VisualButton.LocalScript 
 	local script = Instance.new('LocalScript', VisualButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -888,8 +960,8 @@ local function TJTUI_fake_script() -- VisualButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = true
 	end)
 end
-coroutine.wrap(TJTUI_fake_script)()
-local function YISHWWF_fake_script() -- WalkBotButton.LocalScript 
+coroutine.wrap(CPFXIB_fake_script)()
+local function JRRM_fake_script() -- WalkBotButton.LocalScript 
 	local script = Instance.new('LocalScript', WalkBotButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -898,8 +970,8 @@ local function YISHWWF_fake_script() -- WalkBotButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = false
 	end)
 end
-coroutine.wrap(YISHWWF_fake_script)()
-local function MRJCOAK_fake_script() -- LuckyBlocksGUI.Keybind 
+coroutine.wrap(JRRM_fake_script)()
+local function GLFQ_fake_script() -- LuckyBlocksGUI.Keybind 
 	local script = Instance.new('LocalScript', LuckyBlocksGUI)
 
 	local Frame = script.Parent.Frame
@@ -922,4 +994,4 @@ local function MRJCOAK_fake_script() -- LuckyBlocksGUI.Keybind
 	     end
 	end)
 end
-coroutine.wrap(MRJCOAK_fake_script)()
+coroutine.wrap(GLFQ_fake_script)()
