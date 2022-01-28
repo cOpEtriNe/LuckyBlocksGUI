@@ -33,7 +33,7 @@ local Watermark = Instance.new("TextLabel")
 --Properties:
 
 LuckyBlocksGUI.Name = "LuckyBlocksGUI"
-LuckyBlocksGUI.Parent = game.CoreGUI
+LuckyBlocksGUI.Parent = game.CoreGui
 
 Frame.Parent = LuckyBlocksGUI
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -208,7 +208,8 @@ GetWeaponHack.Text = "Get Weapons Exploit"
 GetWeaponHack.TextColor3 = Color3.fromRGB(0, 0, 0)
 GetWeaponHack.TextScaled = true
 GetWeaponHack.TextSize = 14.000
-GetWeaponHack.TextWrapped = trueGetWeaponHack.MouseButton1Down:Connect(function()
+GetWeaponHack.TextWrapped = true
+GetWeaponHack.MouseButton1Down:Connect(function()
 	while true do
 		wait(1)
 		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
