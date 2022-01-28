@@ -1,4 +1,4 @@
--- lucky blocks gui v1.6
+--V1.6 Hotfix
 
 local LuckyBlocksGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -11,7 +11,7 @@ local Walkspeed = Instance.new("TextButton")
 local GetBlocks = Instance.new("TextButton")
 local SuperBlock = Instance.new("TextButton")
 local DiamondBlock = Instance.new("TextButton")
-local GalazyBlock = Instance.new("TextButton")
+local GalaxyBlock = Instance.new("TextButton")
 local GetWeaponHack = Instance.new("TextButton")
 local VisualsTab = Instance.new("Frame")
 local BiggerHitbox = Instance.new("TextButton")
@@ -20,6 +20,7 @@ local ShinyPlayers = Instance.new("TextButton")
 local ShowHumanoid = Instance.new("TextButton")
 local Chams = Instance.new("TextButton")
 local Headless = Instance.new("TextButton")
+local GraphicsEnhancer = Instance.new("TextButton")
 local WalkbotTab = Instance.new("Frame")
 local WalkToMiddle = Instance.new("TextButton")
 local PanicBot = Instance.new("TextButton")
@@ -32,7 +33,7 @@ local Watermark = Instance.new("TextLabel")
 --Properties:
 
 LuckyBlocksGUI.Name = "LuckyBlocksGUI"
-LuckyBlocksGUI.Parent = game.CoreGui
+LuckyBlocksGUI.Parent = game.CoreGUI
 
 Frame.Parent = LuckyBlocksGUI
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -66,7 +67,7 @@ Version.BackgroundTransparency = 1.000
 Version.Position = UDim2.new(0.440076947, 0, 0, 0)
 Version.Size = UDim2.new(0, 53, 0, 19)
 Version.Font = Enum.Font.SourceSans
-Version.Text = "V1.6 Release"
+Version.Text = "V1.6 Hotfix"
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextSize = 14.000
 
@@ -93,6 +94,7 @@ RainbowBlock.TextWrapped = true
 RainbowBlock.MouseButton1Down:connect(function()
 	game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
 end)
+
 
 Teleport.Name = "Teleport"
 Teleport.Parent = BlocksMiscTab
@@ -129,6 +131,7 @@ Walkspeed.MouseButton1Down:connect(function()
 	end
 end)
 
+
 GetBlocks.Name = "GetBlocks"
 GetBlocks.Parent = BlocksMiscTab
 GetBlocks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -143,6 +146,7 @@ GetBlocks.TextWrapped = true
 GetBlocks.MouseButton1Down:connect(function()
 	game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
 end)
+
 
 SuperBlock.Name = "SuperBlock"
 SuperBlock.Parent = BlocksMiscTab
@@ -176,21 +180,22 @@ DiamondBlock.MouseButton1Down:connect(function()
 	game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
 end)
 
-GalazyBlock.Name = "GalazyBlock"
-GalazyBlock.Parent = BlocksMiscTab
-GalazyBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GalazyBlock.BorderSizePixel = 0
-GalazyBlock.Position = UDim2.new(0.0329342894, 0, 0.532486498, 0)
-GalazyBlock.Size = UDim2.new(0, 165, 0, 22)
-GalazyBlock.Font = Enum.Font.SourceSans
-GalazyBlock.Text = "Get Galaxy Block"
-GalazyBlock.TextColor3 = Color3.fromRGB(0, 0, 0)
-GalazyBlock.TextScaled = true
-GalazyBlock.TextSize = 14.000
-GalazyBlock.TextWrapped = true
-GalazyBlock.MouseButton1Down:Connect(function()
+GalaxyBlock.Name = "GalaxyBlock"
+GalaxyBlock.Parent = BlocksMiscTab
+GalaxyBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GalaxyBlock.BorderSizePixel = 0
+GalaxyBlock.Position = UDim2.new(0.0329342894, 0, 0.532486498, 0)
+GalaxyBlock.Size = UDim2.new(0, 165, 0, 22)
+GalaxyBlock.Font = Enum.Font.SourceSans
+GalaxyBlock.Text = "Get Galaxy Block"
+GalaxyBlock.TextColor3 = Color3.fromRGB(0, 0, 0)
+GalaxyBlock.TextScaled = true
+GalaxyBlock.TextSize = 14.000
+GalaxyBlock.TextWrapped = true
+GalaxyBlock.MouseButton1Down:Connect(function()
 	game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
 end)
+
 
 GetWeaponHack.Name = "GetWeaponHack"
 GetWeaponHack.Parent = BlocksMiscTab
@@ -203,8 +208,7 @@ GetWeaponHack.Text = "Get Weapons Exploit"
 GetWeaponHack.TextColor3 = Color3.fromRGB(0, 0, 0)
 GetWeaponHack.TextScaled = true
 GetWeaponHack.TextSize = 14.000
-GetWeaponHack.TextWrapped = true
-GetWeaponHack.MouseButton1Down:Connect(function()
+GetWeaponHack.TextWrapped = trueGetWeaponHack.MouseButton1Down:Connect(function()
 	while true do
 		wait(1)
 		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
@@ -273,7 +277,7 @@ BiggerHitbox.MouseButton1Down:connect(function()
 
 	mouse.KeyDown:connect(function(key2)
 		if key2 == bind2 then
-			_G.HeadSize = 20
+			_G.HeadSize = 30
 			_G.Disabled = true
 
 
@@ -293,7 +297,6 @@ BiggerHitbox.MouseButton1Down:connect(function()
 		end
 	end)
 end)
-
 
 ESP.Name = "ESP"
 ESP.Parent = VisualsTab
@@ -349,7 +352,7 @@ ShinyPlayers.Name = "ShinyPlayers"
 ShinyPlayers.Parent = VisualsTab
 ShinyPlayers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ShinyPlayers.BorderSizePixel = 0
-ShinyPlayers.Position = UDim2.new(0.39186275, 0, 0.0851847529, 0)
+ShinyPlayers.Position = UDim2.new(0.363291323, 0, 0.0851847529, 0)
 ShinyPlayers.Size = UDim2.new(0, 164, 0, 27)
 ShinyPlayers.Font = Enum.Font.SourceSans
 ShinyPlayers.Text = "Shiny Players"
@@ -366,7 +369,7 @@ ShowHumanoid.Name = "ShowHumanoid"
 ShowHumanoid.Parent = VisualsTab
 ShowHumanoid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ShowHumanoid.BorderSizePixel = 0
-ShowHumanoid.Position = UDim2.new(0.39186275, 0, 0.328645468, 0)
+ShowHumanoid.Position = UDim2.new(0.693648458, 0, 0.0851221532, 0)
 ShowHumanoid.Size = UDim2.new(0, 164, 0, 27)
 ShowHumanoid.Font = Enum.Font.SourceSans
 ShowHumanoid.Text = "Show Humanoid"
@@ -378,11 +381,12 @@ ShowHumanoid.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.Transparency = 0
 end)
 
+
 Chams.Name = "Chams"
 Chams.Parent = VisualsTab
 Chams.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Chams.BorderSizePixel = 0
-Chams.Position = UDim2.new(0.0347198844, 0, 0.572168767, 0)
+Chams.Position = UDim2.new(0.693648458, 0, 0.328645468, 0)
 Chams.Size = UDim2.new(0, 164, 0, 27)
 Chams.Font = Enum.Font.SourceSans
 Chams.Text = "Chams"
@@ -519,12 +523,11 @@ Chams.MouseButton1Down:connect(function()
 	end)
 end)
 
-
 Headless.Name = "Headless"
 Headless.Parent = VisualsTab
 Headless.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Headless.BorderSizePixel = 0
-Headless.Position = UDim2.new(0.39186275, 0, 0.572168767, 0)
+Headless.Position = UDim2.new(0.363291323, 0, 0.328645468, 0)
 Headless.Size = UDim2.new(0, 164, 0, 27)
 Headless.Font = Enum.Font.SourceSans
 Headless.Text = "Clientside Headless"
@@ -533,11 +536,115 @@ Headless.TextScaled = true
 Headless.TextSize = 14.000
 Headless.TextWrapped = true
 Headless.MouseButton1Down:Connect(function()
-while true do
+	while true do
 		wait(1)
 		game.Players.LocalPlayer.Character.Head.Transparency = 1
 		game.Players.LocalPlayer.Character.Head.face:Destroy()
-end
+	end
+end)
+
+GraphicsEnhancer.Name = "GraphicsEnhancer"
+GraphicsEnhancer.Parent = VisualsTab
+GraphicsEnhancer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GraphicsEnhancer.BorderSizePixel = 0
+GraphicsEnhancer.Position = UDim2.new(0.0347198844, 0, 0.55662477, 0)
+GraphicsEnhancer.Size = UDim2.new(0, 164, 0, 27)
+GraphicsEnhancer.Font = Enum.Font.SourceSans
+GraphicsEnhancer.Text = "Better Graphics"
+GraphicsEnhancer.TextColor3 = Color3.fromRGB(0, 0, 0)
+GraphicsEnhancer.TextScaled = true
+GraphicsEnhancer.TextSize = 14.000
+GraphicsEnhancer.TextWrapped = true
+GraphicsEnhancer.MouseButton1Down:connect(function()
+	-- Roblox Graphics Enhancher
+	local light = game.Lighting
+	for i, v in pairs(light:GetChildren()) do
+		v:Destroy()
+	end
+
+	local ter = workspace.Terrain
+	local color = Instance.new("ColorCorrectionEffect")
+	local bloom = Instance.new("BloomEffect")
+	local sun = Instance.new("SunRaysEffect")
+	local blur = Instance.new("BlurEffect")
+
+	color.Parent = light
+	bloom.Parent = light
+	sun.Parent = light
+	blur.Parent = light
+
+	-- enable or disable shit
+
+	local config = {
+
+		Terrain = true;
+		ColorCorrection = true;
+		Sun = true;
+		Lighting = true;
+		BloomEffect = true;
+
+	}
+
+	-- settings {
+
+	color.Enabled = false
+	color.Contrast = 0.15
+	color.Brightness = 0.1
+	color.Saturation = 0.25
+	color.TintColor = Color3.fromRGB(255, 222, 211)
+
+	bloom.Enabled = false
+	bloom.Intensity = 0.1
+
+	sun.Enabled = false
+	sun.Intensity = 0.2
+	sun.Spread = 1
+
+	bloom.Enabled = false
+	bloom.Intensity = 0.05
+	bloom.Size = 32
+	bloom.Threshold = 1
+
+	blur.Enabled = false
+	blur.Size = 6
+
+	-- settings }
+
+
+	if config.ColorCorrection then
+		color.Enabled = true
+	end
+
+
+	if config.Sun then
+		sun.Enabled = true
+	end
+
+
+	if config.Terrain then
+		-- settings {
+		ter.WaterColor = Color3.fromRGB(10, 10, 24)
+		ter.WaterWaveSize = 0.15
+		ter.WaterWaveSpeed = 22
+		ter.WaterTransparency = 1
+		ter.WaterReflectance = 0.05
+		-- settings }
+	end
+
+
+	if config.Lighting then
+		-- settings {
+		light.Ambient = Color3.fromRGB(0, 0, 0)
+		light.Brightness = 4
+		light.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+		light.ColorShift_Top = Color3.fromRGB(0, 0, 0)
+		light.ExposureCompensation = 0
+		light.FogColor = Color3.fromRGB(132, 132, 132)
+		light.GlobalShadows = true
+		light.OutdoorAmbient = Color3.fromRGB(112, 117, 128)
+		light.Outlines = false
+		-- settings }
+	end
 end)
 
 WalkbotTab.Name = "WalkbotTab"
@@ -626,8 +733,6 @@ WalkToMiddle.MouseButton1Down:connect(function()
 	followPath(TEST_DESTINATION)
 end)
 
-
-
 PanicBot.Name = "PanicBot"
 PanicBot.Parent = WalkbotTab
 PanicBot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -639,7 +744,7 @@ PanicBot.TextColor3 = Color3.fromRGB(0, 0, 0)
 PanicBot.TextScaled = true
 PanicBot.TextSize = 14.000
 PanicBot.TextWrapped = true
-WalkToMiddle.MouseButton1Down:connect(function()
+PanicBot.MouseButton1Down:connect(function()
 	wait(1)
 
 	loadstring(game:HttpGet(('https://pastebin.com/raw/LvFwMRvn'),true))()
@@ -706,8 +811,6 @@ WalkToMiddle.MouseButton1Down:connect(function()
 	followPath(TEST_DESTINATION)
 end)
 
-
-
 BlocksMiscButton.Name = "BlocksMiscButton"
 BlocksMiscButton.Parent = Frame
 BlocksMiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -765,7 +868,7 @@ Watermark.TextWrapped = true
 
 -- Scripts:
 
-local function SJDICY_fake_script() -- BlocksMiscButton.LocalScript 
+local function YETNMAY_fake_script() -- BlocksMiscButton.LocalScript 
 	local script = Instance.new('LocalScript', BlocksMiscButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -774,8 +877,8 @@ local function SJDICY_fake_script() -- BlocksMiscButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = false
 	end)
 end
-coroutine.wrap(SJDICY_fake_script)()
-local function RVIPK_fake_script() -- VisualButton.LocalScript 
+coroutine.wrap(YETNMAY_fake_script)()
+local function TJTUI_fake_script() -- VisualButton.LocalScript 
 	local script = Instance.new('LocalScript', VisualButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -784,8 +887,8 @@ local function RVIPK_fake_script() -- VisualButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = true
 	end)
 end
-coroutine.wrap(RVIPK_fake_script)()
-local function DKEXIHS_fake_script() -- WalkBotButton.LocalScript 
+coroutine.wrap(TJTUI_fake_script)()
+local function YISHWWF_fake_script() -- WalkBotButton.LocalScript 
 	local script = Instance.new('LocalScript', WalkBotButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -794,14 +897,14 @@ local function DKEXIHS_fake_script() -- WalkBotButton.LocalScript
 		script.Parent.Parent.VisualsTab.Visible = false
 	end)
 end
-coroutine.wrap(DKEXIHS_fake_script)()
-local function WDSJO_fake_script() -- LuckyBlocksGUI.Keybind 
+coroutine.wrap(YISHWWF_fake_script)()
+local function MRJCOAK_fake_script() -- LuckyBlocksGUI.Keybind 
 	local script = Instance.new('LocalScript', LuckyBlocksGUI)
 
 	local Frame = script.Parent.Frame
 	local Opened = false
 	
-	local PositionClosed = UDim2.new(-0.358, 0,0.349, 0)
+	local PositionClosed = UDim2.new(0, 0,0.695, 0)
 	local PositionOpened = UDim2.new(0.33, 0,0.543, 0)
 	
 	local UserInputService = game:GetService("UserInputService")
@@ -818,4 +921,4 @@ local function WDSJO_fake_script() -- LuckyBlocksGUI.Keybind
 	     end
 	end)
 end
-coroutine.wrap(WDSJO_fake_script)()
+coroutine.wrap(MRJCOAK_fake_script)()
