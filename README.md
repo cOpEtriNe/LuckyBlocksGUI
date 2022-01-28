@@ -35,6 +35,7 @@ Features in this script includes:
  * Get all weapons (done. In 1.6)
  * get galaxy blocks (Done. In 1.6)
  * Graphics Enhancer (Done. In 1.6 Hotfix)
+ * Airstuck (Allows your character to be stuck in place, either in the air or while walking (Already coded wait for net update))
  
  Much more will be added to this script.
  
