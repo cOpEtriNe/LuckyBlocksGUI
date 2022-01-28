@@ -1,5 +1,7 @@
 ![banner](https://raw.githubusercontent.com/cOpEtriNe/ImagePrivate/main/LUcky.PNG?token=GHSAT0AAAAAABPAGTO2CEQKA6FV4TFXE462YPCD5RA)
 
+## SCRIPT IS CURRENTLY BROKEN!!
+
 # LuckyBlocksGUI
 Very Cool gui for the roblox game Lucky Blocks.
 
