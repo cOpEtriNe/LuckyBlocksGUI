@@ -13,8 +13,8 @@ Features in this script includes:
 * Teleport to the middle of the map
 * walkspeed
 * Get Galaxy Blocks
-* Clientside Headless script (make yourself have headless)
-* Panic Mode (Bot that will save your life, broken)
+* Clientside Headless script (make yourself have headless, make sure you dont have any things covering your head.)
+* Panic Mode (Bot that will save your life, working)
 * Weapon/Block exploit (Allows you to get tons of weapons for free!)
 * Hitbox Expander (Press t to refresh)
 * ESP
@@ -32,7 +32,7 @@ Features in this script includes:
  * Better GUI (Done)
  * Get all weapons (done. In 1.6)
  * get galaxy blocks (Done. In 1.6)
- * Graphics Enhancer
+ * Graphics Enhancer (Done. In 1.6 Hotfix)
  
  Much more will be added to this script.
  
@@ -44,14 +44,11 @@ Features in this script includes:
  
  ## Changelog
  
- Script is V1.6, New Things:
+ Script is V1.6 Hotfix, New Things:
  
- * Added Clientside Headless
- * Added Galaxy blocks button
- * Added a exploit to get free weapons
- * Added Panic Mode (broken, bot was supposed to walk off the map to save you)
- * Fixed the position of the gui closing
-
+* Added graphics enhancer
+* Fixed Panic Bot not working
+* Fixed the buttons in visuals tab taking up to much room
 
 that is all for this update.
 
