@@ -1,4 +1,4 @@
-![banner](https://raw.githubusercontent.com/cOpEtriNe/ImagePrivate/main/LUcky.PNG?token=GHSAT0AAAAAABPAGTO2CEQKA6FV4TFXE462YPCD5RA)
+![Discord Server](https://discord.gg/2k3aTWNEgq)
 
 ## Script currently works
 
