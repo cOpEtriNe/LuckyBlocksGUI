@@ -1,4 +1,4 @@
-![Discord Server](https://discord.gg/2k3aTWNEgq)
+https://discord.gg/2k3aTWNEgq  Discord Server
 
 ## Script currently works
 
