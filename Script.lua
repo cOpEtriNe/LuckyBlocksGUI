@@ -275,7 +275,7 @@ BiggerHitbox.MouseButton1Down:connect(function()
 
 	mouse.KeyDown:connect(function(key)
 		if key == bind then
-			player.Character.HumanoidRootPart.CFrame = CFrame.new(1254.09656, 137.906067, -172.128204)
+			("No bind here. Yet.")-- no bind here
 		end
 	end)
 
