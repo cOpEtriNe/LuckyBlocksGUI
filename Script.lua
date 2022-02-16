@@ -1,4 +1,4 @@
--- LuckyBlocks GUI V1.7 Created By cOpEtriNe
+-- luckyblocks gui created by cOpEtriNe
 
 local LuckyBlocksGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -272,13 +272,6 @@ BiggerHitbox.MouseButton1Down:connect(function()
 	bind2 = "t"
 
 	-- Script
-
-	mouse.KeyDown:connect(function(key)
-		if key == bind then
-			("No bind here. Yet.")-- no bind here
-		end
-	end)
-
 	mouse.KeyDown:connect(function(key2)
 		if key2 == bind2 then
 			_G.HeadSize = 30
