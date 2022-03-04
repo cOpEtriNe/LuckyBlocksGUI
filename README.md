@@ -1,4 +1,4 @@
-** A NEW REMADE UI IS COMING WITH BUG FIXES AND MORE SOON**
+** BIG UPDATE OUT**
 
 ## Script currently works
 
@@ -27,6 +27,12 @@ Features in this script includes:
 * Chams
 * Get Diamond Block
 * Show HumanoidRootPart
+* No Lag
+* Ambient
+* Get Void Block
+* Night Mode
+* Jump Height
+
 
  That is all of the features now.
  
@@ -49,10 +55,18 @@ Features in this script includes:
  
  ## Changelog
  
- Script is V1.7 , New Things:
+ Script is V1.8 , New Things:
  
-* Added Remove Trees button
-* Added Airstuck (WHY IS THIS CRAP STILL BROKEN!!)
+* Completely New UI!
+* New Transparent Player Fixes
+* Added night mode
+* Added no lag
+* Added New Void Block
+* Added Ambient
+* Fixed Destory tress not destroying all the trees on the map
+* Fixed walkspeed 
+* Added jumpheight
+* Added new home tab
 
 that is all for this update.
 
