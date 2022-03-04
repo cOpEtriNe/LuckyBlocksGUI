@@ -1,4 +1,4 @@
-https://discord.gg/2k3aTWNEgq  Discord Server
+** A NEW REMADE UI IS COMING WITH BUG FIXES AND MORE SOON**
 
 ## Script currently works
 
