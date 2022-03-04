@@ -63,7 +63,7 @@ Features in this script includes:
 * Added no lag
 * Added New Void Block
 * Added Ambient
-* Fixed Destory tress not destroying all the trees on the map
+* Fixed Destory trees not destroying all the trees on the map
 * Fixed walkspeed 
 * Added jumpheight
 * Added new home tab
