@@ -1,5 +1,12 @@
 -- Luckyblocks GUI V1.8 Update
 
+	local StarterGui = game:GetService("StarterGui")
+	StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "Welcome to Lucky Blocks GUI";
+	Color = Color3.fromRGB(255,0,0); 
+	Font = Enum.Font.SourceSansBold;TextSize = 25
+})
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
