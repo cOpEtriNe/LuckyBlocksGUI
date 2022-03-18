@@ -6,6 +6,7 @@
 Very Cool gui for the roblox game Lucky Blocks.
 
 To open or close the gui, press "Insert" on your keyboard 
+Here is the loadstring: loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/LuckyBlocksGUI/main/Script.lua'))()
 
 ## Features
 Features in this script includes:
