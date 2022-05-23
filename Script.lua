@@ -1,4 +1,5 @@
 -- Luckyblocks GUI V1.8 Update
+-- hi
 
 	local StarterGui = game:GetService("StarterGui")
 	StarterGui:SetCore("ChatMakeSystemMessage", {
