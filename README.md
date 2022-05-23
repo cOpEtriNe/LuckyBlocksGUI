@@ -57,17 +57,8 @@ Features in this script includes:
  ## Changelog
  
  Script is V1.8 , New Things:
- 
-* Completely New UI!
-* New Transparent Player Fixes
-* Added night mode
-* Added no lag
-* Added New Void Block
-* Added Ambient
-* Fixed Destory trees not destroying all the trees on the map
-* Fixed walkspeed 
-* Added jumpheight
-* Added new home tab
+ * UI resize
+* Added box, new name esp
 
 that is all for this update.
 
