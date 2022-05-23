@@ -78,4 +78,4 @@ Here are the binds for somethings in the script
 * Extended Hitbox  = T to refresh
 * Airstuck/Fakelag = E to get Stuck
 * Airstuck/Fakelag = R to get unstuck
-
+(Binds may be wrong)
